@@ -9,6 +9,6 @@ angular.module('app', ['ngRoute', 'ngAnimate'])
                 templateUrl: 'app/home/home.html',
                 controller: 'homeController as home'
             });
-            $locationProvider.html5Mode(true);
+            // $locationProvider.html5Mode(true);
         });
 
