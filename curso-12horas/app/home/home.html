@@ -1,0 +1,36 @@
+<div class="row filters-and-sorts">
+    <div class="col-md-6 col-xs-6">
+        Filter by:
+        <ul class="list-inline">
+            <li><a href="#">Mobile</a></li>
+            <li class="selected"><a href="#">Laptops and Tablets</a></li>
+            <li><a href="#">Books</a></li>
+        </ul>
+    </div>
+    <div class="col-md-6 col-xs-6 text-right">
+        Sort by:
+        <ul class="list-inline">
+            <li><a href="#">Best Price</a></li>
+            <li class="selected"><a href="#">Name</a></li>
+        </ul>
+    </div>
+</div>
+<ul class="row list-inline">
+    <li class="col-md-3 col-sm-6 product-item" ng-repeat="product in home.getProducts()">
+        <div class="product-photo text-center">
+            <img alt="" ng-src="{{ product.photoUrl }}"/>
+        </div>
+        <div>
+            {{ product.name }}
+        </div>
+        <div class="product-price">
+            {{ product.price | currency }}
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-lg btn-success" ng-click="cart.addItem(product)">
+                <i class="glyphicon glyphicon-shopping-cart"></i>
+                Add to Cart
+            </button>
+        </div>
+    </li>
+</ul>

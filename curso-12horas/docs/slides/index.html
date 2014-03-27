@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>ANGULAR JS</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="Gileno Oliveira">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="stylesheet" href="css/site.css">
+
+        
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+				    <h1>Angular JS</h1>
+                    <hr/>
+				    <p><small>HTML enhanced for web apps!</small></p>
+				</section>
+
+                <section>
+                    <h2>Quem somos</h2>
+                    <div  style=" font-size: 18pt;">
+                        <div style="float: left; width: 45%;">
+                            <h3><a href="https://github.com/CGUGileno">Francisco Gileno Oliveira</a></h3>
+                            <ul>
+                                <li>1999 - Truenet - Recife</li>
+                                <li>2007 - Datavolus - Recife</li>
+                                <li>2011 - ITEffect - Wellington - NZ</li>
+                                <li>2013 - C.E.S.A.R. - Recife</li>
+                            </ul>
+                        </div>
+                        <div style="float: left; width:45%">
+                            <h3><a href="https://github.com/ramonvictor">Ramon Victor</a></h3>
+                            <ul>
+                                <li>2008 - SX Brasil</li>
+                                <li>2009 - Ogilvy Interactive</li>
+                                <li>2010 - Partec/TangerinaLab</li>
+                                <li>2013 - JoyStreet</li>
+                                <li>2014 - C.E.S.A.R.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Objetivo</h2>
+                    <ul>
+                        <li>Entender o conceito do Angular e o seu objetivo</li>
+                        <li>Aprender sobre seus componentes (Modules, Controllers, ...)</li>
+                        <li>Iniciar um projeto com Angular</li>
+                        <li>Criar seu próprio componente customizado</li>
+                        <li>Conhecer / revisar boas práticas de desenvolvimento</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Ementa / Cronograma</h2>
+                    <ul>
+                        <li>Dia 1:
+                            <ul>
+                                <li>Introdução ao curso</li>
+                                <li>Introdução ao web / histórico</li>
+                                <li>Angular: conceito, histórico, componentes</li>
+                                <li>Projeto E-commerce: Module, Controller, Directive, Filters</li>
+                            </ul>
+                        </li>
+                        <li>Dia 2:
+                            <ul>
+                                <li>Projeto E-commerce: Services, Factory, Provider</li>
+                                <li>Routes</li>
+                                <li>Comunicação com Server-side</li>
+                                <li>Animations</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </section>
+                        <section>
+                            <h2>Ementa / Cronograma</h2>
+                       <ul>
+                        <li>Dia 3:
+                            <ul>
+                                <li>Projeto E-commerce: Custom Services, Directives, Filters</li>
+                                <li>End to end tests com Protactor</li>
+                            </ul>
+                        </li>
+                        <li>Dia 4:
+                            <ul>
+                                <li>Projeto E-commerce Lab: Novos requisitos</li>
+                                <li>Animations</li>
+                                <li>Unit tests com Karma</li>
+                                <li>End to end tests com Protractor</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Web: Breve histórico</h2>
+                </section>
+
+                <section>
+                    <h2>1991 - 1999</h2>
+                    <p>Request: http://www.yahoo.com</p>
+                    <div class="fragment" style="background-color: #fff">
+                        <iframe src="http://web.archive.org/web/19990208021747/http://yahoo.com/" width="800" scrolling="no" height="400" frameborder="0"></iframe>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>1999</h2>
+                    <h2 class="fragment">Ajax</h2>
+                    <ul style="text-align: left;">
+                        <li class="fragment">1998/1999 - Microsoft introduz o primeiro cliente XMLHTTP no IE, logo adotado por Mozilla, Safari e Opera.</li>
+                        <li class="fragment">2004/2005 - Google densenvolve o Gmail e Google Maps.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Evolução das bibliotecas Javascript</h2>
+                    <ul>
+                        <li>HTML DOM
+                            <ul>
+                                <li>Prototype JavaScript Framework - Fev/2005</li>
+                                <li>jQuery - Jan/2006</li>
+                                <li>MooTools - Set/2006</li>
+                            </ul>
+                        </li>
+                        <li>MV* Frameworks
+                            <ul>
+                                <li>Knockout JS - jul/2010</li>
+                                <li>Backbone JS - out/2010</li>
+                                <li>Angular JS - ~2011</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>AngularJS - Histórico</h2>
+                    <ul>
+                        <li>Side Project - Misko Hevery e Adam Abrons</li>
+                        <li>Google Feedback - 17000 linhas de javascript em 6 meses</li>
+                        <li>Aposta com Gerente: Reescrever toda a aplicação em 2 semanas</li>
+                        <li class="fragment">Durou 3 semanas, com 1500 linhas de código.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Angular: Pontos fortes</h2>
+                    <ul>
+                        <li>Desenvolvido e mantido pelo Google</li>
+                        <li>Comunidade grande e ativa</li>
+                        <li>Suporte a diversos browsers, incluindo IE8+</li>
+                        <li>Open Source: MIT License</li>
+                        <li>Plugins, IDE's support, integração com outras tecnologias</li>
+                        <li>Desenvolvido com foco em teste</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Angular: Pontos fracos</h2>
+                    <ul>
+                        <li>Curva de aprendizado</li>
+                        <li>Scope e Inheritance</li>
+                        <li>SEO Support</li>
+                        <li>Não se aplica a qualquer projeto</li>
+                        <li>Adiciona lógica ao HTML com atributos</li>
+                    </ul>
+                </section>
+
+			    <section>
+			        <h2>Angular JS Code</h2>
+					<pre><code data-trim="" contenteditable="" style="font-size: 18px; margin-top: 20px;" class="javascript">
+&lt;html&gt;
+    &lt;body&gt;
+        .
+        .
+        .
+        &lt;script src=&quot;angular.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+					</code></pre>					
+			    </section>
+
+                <section>
+                    <h2>Angular - Characteristics</h2>
+
+                    <ul class="block">
+                        <li>Modules</li>
+                        <li>Controllers</li>
+                        <li>Services</li>
+                        <li>Views</li>
+                        <li>Directives</li>
+                        <li>Filters</li>
+                        <li>Two-way Data Binding</li>
+                        <li>Routing</li>
+                        <li>Dependency Injection</li>
+                        <li>Testable</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <h2>Hands on!</h2>
+
+                    <h3>Live demo</h3>
+                    <p style="margin-bottom:50px">
+                    	<a href="http://ramonvictor.github.io/angularjs-intervalo-cesar/">http://ramonvictor.github.io/angularjs-intervalo-cesar/</a>
+                    </p>
+
+                    <h3>Source code</h3>
+                    <p>
+                    	<a href="https://github.com/CGUGileno/angular_intervalo_cesar">https://github.com/CGUGileno/angular_intervalo_cesar</a>
+                    </p>
+
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
