@@ -90,6 +90,7 @@
                                 <li>Web: histórico</li>
                                 <li>Angular: conceito, histórico, componentes</li>
                                 <li>Projeto E-commerce: Module, Controller, Directive, Filters</li>
+                                <li>Organizando o código: File and Folders</li>
                             </ul>
                         </li>
                         <li>Dia 2:
@@ -100,6 +101,12 @@
                                 <li>Animations</li>
                             </ul>
                         </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Ementa / Cronograma</h2>
+                    <ul>
                         <li>Dia 3:
                             <ul>
                                 <li>Projeto E-commerce: Custom Services, Directives, Filters</li>
@@ -108,7 +115,7 @@
                         </li>
                         <li>Dia 4:
                             <ul>
-                                <li>Lab: Novos requisitos, e quem desenvolve é você.</li>
+                                <li>Lab: Novos requisitos, e quem implementa é você.</li>
                             </ul>
                         </li>
                     </ul>
@@ -224,152 +231,151 @@
                 </section>
 
                 <section>
-                    <h2>Hello World Demo!</h2>
-                </section>
-
-                <section>
                     <h2>E-commerce Demo!</h2>
                 </section>
 
                 <section>
                     <h2>Organizando o código<br />Files and Folders</h2>
 
-                    <h3>Angular Seed</h3>
-                    <ul>
-                        <li>app
-                            <ul>
-                                <li>js
-                                    <ul>
-                                        <li>controllers.js</li>
-                                        <li>services.js</li>
-                                        <li>filters.js</li>
-                                        <li>directives.js</li>
-                                    </ul>
-                                </li>
-                                <li>css</li>
-                                <li>partials</li>
-                                <li>img</li>
-                                <li>lib</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <h4 class="title-left">Angular Seed</h4>
+<pre><code data-trim="" contenteditable="" style="font-size: 18px; margin-top: 20px;" class="javascript">
+    app/
+        js/
+            controllers.js
+            services.js
+            filters.js
+            directives.js
+        css/
+        partials/
+        img/
+        lib/
+</code></pre>
                 </section>
 
                 <section>
                     <h2>Organizando o código<br />Files and Folders</h2>
 
-                    <h3>Angular Seed</h3>
-                    <ul>
-                        <li>app
-                            <ul>
-                                <li>js
-                                    <ul>
-                                        <li>controller1.js</li>
-                                        <li>controller2.js</li>
-                                        <li>service1.js</li>
-                                        <li>service2.js</li>
-                                        <li>etc...</li>
-                                    </ul>
-                                </li>
-                                <li>css</li>
-                                <li>partials</li>
-                                <li>img</li>
-                                <li>lib</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <h4 class="title-left">Angular Seed</h4>
+
+
+<pre><code data-trim="" contenteditable="" style="font-size: 18px; margin-top: 20px;" class="javascript">
+    app/
+        js/
+            controller1.js
+            controller2.js
+            service1.js
+            service2.js
+            etc...
+        css/
+        partials/
+        img/
+        lib/
+</code></pre>
+                </section>
+                <section>
+                    <h2>Organizando o código<br />Files and Folders</h2>
+
+                    <h4 class="title-left">By Type</h4>
+
+<pre><code data-trim="" contenteditable="" style="font-size: 18px; margin-top: 20px;" class="javascript">
+    app/
+        js/
+            controllers
+                controller1.js
+                controller2.js
+            services
+                service1.js
+                service2.js
+            filters
+                filter1.js
+                filter2.js
+            etc...
+        css/
+        partials/
+        img/
+        lib/
+</code></pre>
+                </section>
+                <section>
+                    <h2>Organizando o código<br />Files and Folders</h2>
+                    <h4 class="title-left">By Feature</h4>
+<pre><code data-trim="" contenteditable="" style="font-size: 18px; margin-top: 20px;" class="javascript">
+app/
+    authentication
+        authController.js
+        authService.js
+        authDirective.js
+        auth.html
+    cart
+        cartController.js
+        cartService.js
+        cartDirective.js
+        cart.html
+css/
+img/
+lib/
+</code></pre>
                 </section>
 
                 <section>
                     <h2>Organizando o código<br />Files and Folders</h2>
-
-                    <h3>By Type</h3>
-                    <ul>
-                        <li>app
-                            <ul>
-                                <li>js
-                                    <ul>
-                                        <li>controllers
-                                            <ul>
-                                                <li>controller1.js</li>
-                                                <li>controller2.js</li>
-                                            </ul>
-                                        </li>
-                                        <li>services
-                                            <ul>
-                                                <li>service1.js</li>
-                                                <li>service2.js</li>
-                                            </ul>
-                                        </li>
-                                        <li>etc...</li>
-                                    </ul>
-                                </li>
-                                <li>css</li>
-                                <li>partials</li>
-                                <li>img</li>
-                                <li>lib</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <h4 class="title-left">By Feature then type</h4>
+<pre><code data-trim="" contenteditable="" style="font-size: 18px; margin-top: 20px;" class="javascript">
+app/
+    authentication
+        controllers
+            authController.js
+        services
+            authService.js
+        directives
+            authDirective.js
+        partials
+            auth.html
+    cart
+        controllers
+            cartController.js
+        services
+            cartService.js
+        directives
+            cartDirective.js
+        partials
+            cart.html
+css/
+img/
+lib/
+</code></pre>
                 </section>
-
                 <section>
                     <h2>Organizando o código<br />Files and Folders</h2>
-                    <h3>By Feature</h3>
-                    <ul>
-                        <li>app
-                            <ul>
-                                <li>Authentication
-                                    <ul>
-                                        <li>authController.js</li>
-                                        <li>authService.js</li>
-                                        <li>authDirective.js</li>
-                                    </ul>
-                                </li>
-                                <li>Cart
-                                    <ul>
-                                        <li>cartController.js</li>
-                                        <li>cartService.js</li>
-                                        <li>cartDirective.js</li>
-                                    </ul>
-                                </li>
-                                <li>css</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <h4 class="title-left">By Feature then Subfeature</h4>
+<pre><code data-trim="" contenteditable="" style="font-size: 18px; margin-top: 20px;" class="javascript">
+app/
+    product
+        productsByCategory
+            productsByCategoryController.js
+            productsByCategoryService.js
+            productsByCategoryDirective.js
+            productsByCategory.html
+        productDetails
+            productDetailsController.js
+            productDetailsService.js
+            productDetailsDirective.js
+            productDetails.html
+    cart
+        cartController.js
+        cartService.js
+        cartDirective.js
+        cart.html
+    css/
+    img/
+    lib/
+</code></pre>
                 </section>
 
-                <section>
-                    <h2>Organizando o código<br />Files and Folders</h2>
-                    <h3>By Feature then Type</h3>
-                    <ul>
-                        <li>app
-                            <ul>
-                                <li>Authentication
-                                    <ul>
-                                        <li>controllers
-                                            <ul>
-                                                <li>authController.js</li>
-                                            </ul>
-                                        </li>
-                                        <li>services
-                                            <ul>
-                                                <li>authService.js</li>
-                                            </ul>
-                                        </li>
-                                        <li>directives
-                                            <ul>
-                                                <li>authDirective.js</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
+
+
+
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
