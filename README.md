@@ -28,7 +28,7 @@
 
 2. Dia 2 (Gileno)
   1. Desenvolvendo um e-commerce com Angular
-    1. Services (Service, Factory e Provider)
+    1. Services
     2. Routes
     3. Comunicando com o servidor
       1. $http
@@ -38,9 +38,8 @@
   3. Quiz
 3. Dia 3
   1. Desenvolvendo um e-commerce com Angular
-    1. Custom Services (Gileno)
-    2. Custom Directives (Ramon)
-    3. Custom Filters (Ramon)
+    1. Custom Directives (Ramon)
+    2. Custom Filters (Ramon)
   3. End to end tests com Protractor (Ramon)
   4. Quiz
 4. Lab: Aperfeiçoando o e-commerce, agora é sua vez.
