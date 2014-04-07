@@ -24,7 +24,7 @@
     3. Controllers
     4. Basic Directives: ng-app, ng-controller, ng-repeat, ng-src, etc
     5. Basic Filters: currency, limitTo, filter, orderBy, etc
-  4. Organizando o código: File and Folders
+  4. Organizando o código: Files and Folders
   5. Quiz
 
 2. Dia 2 (Gileno)
