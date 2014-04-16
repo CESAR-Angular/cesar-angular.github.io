@@ -6,8 +6,8 @@ angular.module('app', ['ngRoute', 'ngAnimate'])
                 templateUrl: 'app/cart/cart.html'
             });
             $routeProvider.when('/', {
-                templateUrl: 'app/home/home.html',
-                controller: 'homeController as home'
+                templateUrl: 'app/products/homeProductsList.html',
+                controller: 'productController as products'
             });
             // $locationProvider.html5Mode(true);
         });

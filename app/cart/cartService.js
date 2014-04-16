@@ -1,8 +1,8 @@
-(function (app) {
     'use strict';
 
-    function cartService() {
+    angular.module('app').service('cartService', cartService);
 
+    function cartService() {
         var cartItems = [];
 
         return {
@@ -59,6 +59,3 @@
             return total;
         }
     }
-
-    app.service('cartService', cartService);
-}(angular.module('app')));

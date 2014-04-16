@@ -20139,14 +20139,14 @@
      <div class="animate-switch-container"
      ng-switch on="selection">
      <div class="animate-switch" ng-switch-when="settings">Settings Div</div>
-     <div class="animate-switch" ng-switch-when="home">Home Span</div>
+     <div class="animate-switch" ng-switch-when="products">Home Span</div>
      <div class="animate-switch" ng-switch-default>default</div>
      </div>
      </div>
      </file>
      <file name="script.js">
      function Ctrl($scope) {
-        $scope.items = ['settings', 'home', 'other'];
+        $scope.items = ['settings', 'products', 'other'];
         $scope.selection = $scope.items[0];
       }
      </file>
@@ -20190,7 +20190,7 @@
      it('should start in settings', function() {
         expect(switchElem.getText()).toMatch(/Settings Div/);
       });
-     it('should change to home', function() {
+     it('should change to products', function() {
         select.element.all(by.css('option')).get(1).click();
         expect(switchElem.getText()).toMatch(/Home Span/);
       });

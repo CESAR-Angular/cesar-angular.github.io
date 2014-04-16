@@ -13,7 +13,7 @@
                 <a href="#/">AngularJS Commerce</a>
             </div>
             <div class="col-md-8 col-xs-6 text-right">
-                <cart-summary
+                <ax-cart-summary
                         number-of-items="{{ cart.getNumberOfItems() }}"
                         total="{{ cart.getTotal() }}" />
             </div>
@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-md-6 col-xs-6 text-left">AngularJS Commerce</div>
             <div class="col-md-6 col-xs-6 text-right">
-                <cart-summary
+                <ax-cart-summary
                         number-of-items="{{ cart.getNumberOfItems() }}"
                         total="{{ cart.getTotal() }}" />
             </div>
@@ -42,9 +42,9 @@
 <script src="js/angular-locale_pt-br.js"></script>
 <script src="app/data.js"></script>
 <script src="app/app.js"></script>
-<script src="app/home/homeController.js"></script>
+<script src="app/products/productController.js"></script>
 <script src="app/cart/cartController.js"></script>
 <script src="app/cart/cartService.js"></script>
-<script src="app/cart/cartSummary.js"></script>
+<script src="app/cart/ax-cart-summary.js"></script>
 </body>
 </html>

@@ -1148,7 +1148,7 @@ var Reveal = (function(){
 		if( previousSlide ) {
 			previousSlide.classList.remove( 'present' );
 
-			// Reset all slides upon navigate to home
+			// Reset all slides upon navigate to products
 			// Issue: #285
 			if ( document.querySelector( HOME_SLIDE_SELECTOR ).classList.contains( 'present' ) ) {
 				// Launch async task
@@ -1825,7 +1825,7 @@ var Reveal = (function(){
 			case 75: case 38: navigateUp(); break;
 			// j, down
 			case 74: case 40: navigateDown(); break;
-			// home
+			// products
 			case 36: slide( 0 ); break;
 			// end
 			case 35: slide( Number.MAX_VALUE ); break;
