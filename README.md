@@ -21,29 +21,26 @@
 
 
 2. Dia 2 (Gileno)
-  1. Revisão Dia 1: Revisar 2 projetos.
-  2. Apresentação de uma possível solução.
-  3. Conteúdo
+  1. Apresentação de uma possível solução.
+  2. Conteúdo
     1. Services
     2. Routes
     3. Comunicando com o servidor
       1. $http
       2. $q
       3. $resource
-  4. Produção: Desenvolvendo um e-commerce com Angular
+  3. Produção: Desenvolvendo um e-commerce com Angular
 
 3. Dia 3
-  1. Revisão Dia 2: Revisar 2 projetos.
-  2. Apresentação de uma possível solução.
-  3. Conteúdo
+  1. Apresentação de uma possível solução.
+  2. Conteúdo
     1. Custom Directives (Ramon)
     2. Custom Filters (Ramon)
     3. End to end tests com Protractor (Ramon)
-  4. Produção: Desenvolvendo um e-commerce com Angular
+  3. Produção: Desenvolvendo um e-commerce com Angular
 
 4. Dia 4
   1. Produção: Desenvolvendo um e-commerce com Angular
-  2. Revisão Dia 3: Revisar até 2 projetos.
-  3. Apresentação de uma possível solução.
-  4. Conclusão
+  2. Apresentação de uma possível solução.
+  3. Conclusão
   
